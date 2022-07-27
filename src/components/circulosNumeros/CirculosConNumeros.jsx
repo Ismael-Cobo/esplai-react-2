@@ -11,6 +11,7 @@ export const CirculosConNumeros = () => {
 
   const handleClick = () => {
     setNumeros(current => current.map(current => ({ id: current.id, num: Math.floor(Math.random() * 49) })))
+
   }
 
   return (
