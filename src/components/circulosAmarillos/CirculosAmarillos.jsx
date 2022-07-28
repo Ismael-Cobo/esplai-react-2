@@ -14,7 +14,7 @@ export const CirculosAmarillos = () => {
 
 
   const onClick = (id) => {
-    setBolas(current => current.map(current => current.id === id ? { id: id, active: true } : current))
+    setBolas(current => current.map(current => current.id === id ? { id: id, active: !current.active } : current))
   }
 
   return (
